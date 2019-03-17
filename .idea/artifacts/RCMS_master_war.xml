@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="RCMS-master:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/RCMS_master_war</output-path>
+    <root id="archive" name="RCMS-master_war.war">
+      <element id="artifact" artifact-name="RCMS-master:war exploded" />
+    </root>
+  </artifact>
+</component>
