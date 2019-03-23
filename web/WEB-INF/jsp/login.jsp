@@ -77,7 +77,7 @@ body {
 <script type="text/javascript">
 	$("#submitBtn").click(function(){
 		var userCode=$("#userCode").val();
-		var userPassWord=$("#userPassword").val();
+		var userPassWord=$("#userPassWord").val();
 		var errorLogin = $("#error-login");
 
 		if(userCode === ''){
