@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import org.springframework.web.bind.annotation.ResponseBody;
 import pojo.User;
 import service.user.UserService;
 
@@ -27,16 +28,22 @@ public class LoginController {
 		return "login";
 	}
 
+	@RequestMapping(value="/",method=RequestMethod.POST)
+	@ResponseBody
+	public String doLoginRoot(User user,HttpSession session,Model model){
+		return doLogin(user, session, model);
+	}
+
 	//处理登录
 	@RequestMapping(value="login.html",method=RequestMethod.POST)
+	@ResponseBody
 	public String doLogin(User user,HttpSession session,Model model){
 		User logUser=userService.login(user);
 		if(logUser!=null){
 			session.setAttribute("user", logUser);
-			return "redirect:desklist.html?show=desk";
+			return "{\"code\":0}";
 		}else{
-			model.addAttribute("error", "账号和密码不匹配");
-			return "login";
+			return "{\"code\":1}";
 		}	
 	}
 	

@@ -73,6 +73,55 @@ body {
 		</div>
 	</div>
 <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/login.js"></script>
+
+<script type="text/javascript">
+	$("#submitBtn").click(function(){
+		var userCode=$("#userCode").val();
+		var userPassWord=$("#userPassword").val();
+		var errorLogin = $("#error-login");
+
+		if(userCode === ''){
+			errorLogin.text("账号不能为空");
+			return;
+		}else if(!(/^[0-9a-zA-z]{3,16}$/.test(userCode))){
+			errorLogin.text("请输入3~16位数字或字母");
+			return;
+		}else{
+			errorLogin.text("");
+		}
+		if(userPassWord === ''){
+			errorLogin.text("密码不能为空");
+			return;
+		}else if(!(/^[0-9a-zA-z]{6,18}$/.test(userPassWord))){
+			errorLogin.text("请输入6~18位数字或字母");
+			return;
+		}else{
+			errorLogin.text("");
+		}
+
+		$.ajax({
+			url: "${pageContext.request.contextPath}/login.html",
+			type: "POST",
+			data: {"userCode":userCode, "userPassWord": userPassWord},
+			dataType: "JSON",
+			success: function(data) {
+				if (data.code == 0) {
+					window.location.href = "desklist.html?show=desk";
+				} else {
+					$("#error-login").text("用户名或密码错误");
+				}
+			},
+			error: function () {
+				$("#error-login").text("暂时无法连接到服务器")
+			}
+		});
+
+	});
+	$("#resetBtn").click(function(){
+		$("#userCode").val("");
+		$("#userPassWord").val("");
+		$("#error-login").text("");
+	});
+</script>
 </body>
 </html>
