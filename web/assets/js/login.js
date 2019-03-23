@@ -17,5 +17,6 @@ $(function(){
 			userPassWord.setCustomValidity("");
 		}
 	});
-	
+    $("#resetBtn").click(function(){
+    });
 });

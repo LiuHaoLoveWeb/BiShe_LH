@@ -31,7 +31,7 @@
 						class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="#"> <img
-					src="${pageContext.request.contextPath}/assets/img/logo.png" />
+					src="${pageContext.request.contextPath}/assets/img/logo.png" style="width: 70px;height: 70px;"/>
 				</a>
 			</div>
 			<div class="row">
