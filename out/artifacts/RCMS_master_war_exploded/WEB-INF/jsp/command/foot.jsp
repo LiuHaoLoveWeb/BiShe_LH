@@ -5,7 +5,7 @@
 <!-- 尾部 -->
 <div class="footer">
 	<div class="row">
-		<div class="col-lg-12">欢迎使用本系统</div>
+		<div class="col-lg-12"> 欢 迎 使 用 本 系 统 </div>
 	</div>
 </div>
 <!-- 导入JS -->

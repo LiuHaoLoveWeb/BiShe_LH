@@ -36,8 +36,8 @@
 			</div>
 			<div class="row">
 			<span class="logout-spn">
-			 <a href="javascript:;" style="color:#fff;">操作员:${user.userName }</a>
-				<p class="text-right"><a href="${pageContext.request.contextPath}/logout.html" style="color:white;font-size: 14px;">注销</a></p>
+			 <a href="javascript:;" style="color:#fff;">操作员 : ${user.userName }</a>
+				<p class="text-right"><a href="${pageContext.request.contextPath}/logout.html" style="color:white;font-size: 14px;"> 注 销 </a></p>
 			</span>
 			</div>
 		</div>

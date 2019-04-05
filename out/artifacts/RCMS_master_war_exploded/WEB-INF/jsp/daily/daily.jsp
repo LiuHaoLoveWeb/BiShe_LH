@@ -14,6 +14,8 @@
 
     <link rel="stylesheet" type="text/css" href="jsp/assets/css/daily.css">
 
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -37,7 +39,7 @@
         <div class="row text-center pad-top">
             <div class="col-lg-12">
                 <div class="div-square weihu" id="dishMenu2">
-                    <a href="javascript:;"><i class="fa fa-clipboard fa-5x"></i>
+                    <a href="javascript:;"><i class="fa fa-clipboard fa-3x"></i>
                         <h4>菜单维护</h4></a>
                 </div>
             </div>
@@ -45,7 +47,7 @@
         <div class="row text-center pad-top">
             <div class="col-lg-12">
                 <div class="div-square weihu" id="dishMenu1">
-                    <a href="javascript:;"><i class="fa fa-circle-o-notch fa-5x"></i>
+                    <a href="javascript:;"><i class="fa fa-circle-o-notch fa-3x"></i>
                         <h4>桌位维护</h4></a>
                 </div>
             </div>
@@ -53,7 +55,7 @@
         <div class="row text-center pad-top">
             <div class="col-lg-12">
                 <div class="div-square weihu" id="dishMenu3">
-                    <a href="javascript:;"><i class="fa fa-user fa-5x"></i>
+                    <a href="javascript:;"><i class="fa fa-user fa-3x"></i>
                         <h4>账号维护</h4></a>
                 </div>
             </div>
@@ -61,7 +63,7 @@
         <div class="row text-center pad-top">
             <div class="col-lg-12">
                 <div class="div-square weihu" id="dishMenu4">
-                    <a href="javascript:;"><i class="fa fa-bell-o fa-5x"></i>
+                    <a href="javascript:;"><i class="fa fa-bell-o fa-3x"></i>
                         <h4>供应商维护</h4></a>
                 </div>
             </div>
