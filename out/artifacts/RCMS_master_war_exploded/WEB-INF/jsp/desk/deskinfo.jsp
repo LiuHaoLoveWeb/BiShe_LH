@@ -24,7 +24,7 @@
 	<input type="hidden" value="${desk.deskCode }" id="deskCode">
 		<div class="panel-heading">
 			<p class="text-right">
-				<a href="${pageContext.request.contextPath}/desklist.html?show=desk""><span
+				<a href="${pageContext.request.contextPath}/desklist.html?show=desk"><span
 					class="glyphicon glyphicon-remove-circle"></span></a>
 			</p>
 			<div class=" row" style="font-size: 16px;">
